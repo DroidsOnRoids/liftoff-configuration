@@ -12,6 +12,12 @@ and hidden directory `.liftoff` with all contents inside the local `./` or in th
 * `~` is recommended for default setup for all projects.
 * `.` is recommended for every single project (or in basic configuration not recommended at all).
 
+The easiest way to do this is run this being in main directory of the repo:
+```bash
+$ cp -r .liftoff ~
+$ cp .liftoffrc ~/.liftoffrc
+```
+
 ## Usage
 
 ### Required command
