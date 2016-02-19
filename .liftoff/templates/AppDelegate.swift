@@ -6,8 +6,7 @@
 //  Copyright (c) <%= Time.now.strftime('%Y') %> <%= company %>. All rights reserved.
 //
 
-import UIKit
-<% if dependency_manager_enabled?("cocoapods") %>
+import UIKit<% if dependency_manager_enabled?("cocoapods") %>
 import HockeySDK
 <% end %>
 @UIApplicationMain
