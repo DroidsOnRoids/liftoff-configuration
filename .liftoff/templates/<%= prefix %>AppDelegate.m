@@ -8,10 +8,10 @@
 
 // App Delegate
 #import "<%= prefix %>AppDelegate.h"
-
+<% if dependency_manager_enabled?("cocoapods") %>
 // Frameworks
 @import HockeySDK;
-
+<% end %>
 @implementation <%= prefix %>AppDelegate
 <% if dependency_manager_enabled?("cocoapods") %>
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -19,7 +19,7 @@
     [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"APP_IDENTIFIER"];
     [[BITHockeyManager sharedHockeyManager] startManager];
     [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
-    
+
     return YES;
 }
 <% end %>

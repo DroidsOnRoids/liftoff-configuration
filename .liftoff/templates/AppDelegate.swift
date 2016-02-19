@@ -7,8 +7,9 @@
 //
 
 import UIKit
+<% if dependency_manager_enabled?("cocoapods") %>
 import HockeySDK
-
+<% end %>
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
