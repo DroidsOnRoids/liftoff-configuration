@@ -1,0 +1,81 @@
+company: "Droids on Roids"
+author: "Droids on Roids"
+prefix: ""
+test_target_name: UnitTests
+configure_git: false
+warnings_as_errors: false
+enable_static_analyzer: true
+indentation_level: 4
+use_tabs: false
+dependency_managers: []
+enable_settings: false
+strict_prompts: true
+deployment_target: 8.0
+run_script_phases: []
+templates: []
+xcode_command: false
+
+extra_config:
+  all:
+      CURRENT_PROJECT_VERSION: 0
+
+project_template: swift
+
+app_target_templates:
+  objc:
+    - <%= project_name %>:
+      - <%= prefix %>AppDelegate.h # don't know why need to give here prefix (even empty),
+      - <%= prefix %>AppDelegate.m # but it doesn't work well without it
+      - LaunchScreen.xib
+      - Main.storyboard
+      - Application View Controllers:
+      - Generic View Controllers:
+      - Generic Views:
+      - Generic Objects:
+      - Networking:
+        - API:
+        - Sockets:
+      - Data Base:
+      - Helpers:
+        - Categories:
+        - Extensions:
+        - Libraries:
+      - Supporting Files:
+        - Fonts:
+        - Info.plist
+        - <%= project_name %>-Prefix.pch
+        - main.m
+      - Resources:
+        - Images.xcassets
+
+  swift:
+    - <%= project_name %>:
+      - Main.storyboard
+      - AppDelegate.swift
+      - LaunchScreen.xib
+      - Application View Controllers:
+      - Generic View Controllers:
+      - Generic Views:
+      - Generic Objects:
+      - Networking:
+        - API:
+        - Sockets:
+      - Data Base:
+      - Helpers:
+        - Categories:
+        - Extensions:
+        - Libraries:
+      - Supporting Files:
+        - Fonts:
+        - Info.plist
+      - Resources:
+        - Images.xcassets
+
+test_target_templates:
+  objc:
+    - <%= test_target_name %>:
+      - <%= test_target_name %>-Info.plist
+      - <%= test_target_name %>-Prefix.pch
+  swift:
+    - <%= test_target_name %>:
+      - <%= test_target_name %>-Info.plist
