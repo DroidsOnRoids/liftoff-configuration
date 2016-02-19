@@ -34,3 +34,4 @@ $ liftoff -n "Clock" --test-target-name "ClockTests"
 * `-C COMPANY NAME`     set the company name (default is `Droids on Roids`)
 * `-a AUTHOR NAME`      set the author name (default is `Droids on Roids`)
 * `-t IDENTIFIER`       set the company identifier (`com.company`) (default is `com.droidsonroids`)
+* `--no-cocoapods`      disable CocoaPods integration (default is enabled)

@@ -1,0 +1,6 @@
+platform :ios, '<%= deployment_target %>'
+use_frameworks!
+
+target '<%= project_name %>' do
+    pod 'HockeySDK'
+end

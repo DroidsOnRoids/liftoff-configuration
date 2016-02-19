@@ -7,7 +7,7 @@ warnings_as_errors: false
 enable_static_analyzer: true
 indentation_level: 4
 use_tabs: false
-dependency_managers: []
+dependency_managers: cocoapods
 enable_settings: false
 strict_prompts: true
 deployment_target: 8.0
@@ -24,8 +24,8 @@ project_template: swift
 app_target_templates:
   objc:
     - <%= project_name %>:
-      - <%= prefix %>AppDelegate.h # don't know why need to give here prefix (even empty),
-      - <%= prefix %>AppDelegate.m # but it doesn't work well without it
+      - <%= prefix %>AppDelegate.h # there has to be <%= prefix %> (even empty)
+      - <%= prefix %>AppDelegate.m # because that's right name for template file
       - LaunchScreen.xib
       - Main.storyboard
       - Application View Controllers:
