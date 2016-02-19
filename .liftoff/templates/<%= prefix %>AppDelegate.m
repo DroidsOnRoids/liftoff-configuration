@@ -13,7 +13,7 @@
 @import HockeySDK;
 
 @implementation <%= prefix %>AppDelegate
-
+<% if dependency_manager_enabled?("cocoapods") %>
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // HockeyApp implementation
     [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:@"APP_IDENTIFIER"];
@@ -22,5 +22,5 @@
     
     return YES;
 }
-
+<% end %>
 @end

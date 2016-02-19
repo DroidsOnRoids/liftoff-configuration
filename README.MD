@@ -22,17 +22,17 @@ $ cp .liftoffrc ~/.liftoffrc
 
 ### Required command
 ```bash
-$ liftoff -n "PROJECTNAME"
+$ liftoff -n "PROJECTNAME" --cocoapods
 ```
 It is not recommended, because `UnitTests` becomes the target name. Recommended tests' target name is `PROJECTNAMETests`.
 
 ### Recommended command
 ```bash
-$ liftoff -n "PROJECTNAME" --test-target-name "TESTTARGETNAME"
+$ liftoff -n "PROJECTNAME" --test-target-name "TESTTARGETNAME" --cocoapods
 ```
 For example:
 ```bash
-$ liftoff -n "Clock" --test-target-name "ClockTests"
+$ liftoff -n "Clock" --test-target-name "ClockTests" --cocoapods
 ```
 
 ### Optional parameters
@@ -40,4 +40,4 @@ $ liftoff -n "Clock" --test-target-name "ClockTests"
 * `-C COMPANY NAME`     set the company name (default is `Droids on Roids`)
 * `-a AUTHOR NAME`      set the author name (default is `Droids on Roids`)
 * `-t IDENTIFIER`       set the company identifier (`com.company`) (default is `com.droidsonroids`)
-* `--no-cocoapods`      disable CocoaPods integration (default is enabled)
+* `--[no-]cocoapods`    enable or disable CocoaPods support

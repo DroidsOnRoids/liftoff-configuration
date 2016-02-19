@@ -13,7 +13,7 @@ import HockeySDK
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
-
+<% if dependency_manager_enabled?("cocoapods") %>
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // HockeyApp implementation
         BITHockeyManager.sharedHockeyManager().configureWithIdentifier("APP_IDENTIFIER")
@@ -22,5 +22,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-    
+<% end %>
 }
