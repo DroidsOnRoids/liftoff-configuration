@@ -41,3 +41,4 @@ $ liftoff -n "Clock" --test-target-name "ClockTests" --cocoapods
 * `-a AUTHOR NAME`      set the author name (default is `Droids on Roids`)
 * `-t IDENTIFIER`       set the company identifier (`com.company`) (default is `com.droidsonroids`)
 * `--[no-]cocoapods`    enable or disable CocoaPods support
+* `--[no-]git`          enable or disable git configuration
