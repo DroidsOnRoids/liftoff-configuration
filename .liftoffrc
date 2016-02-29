@@ -18,6 +18,7 @@ xcode_command: false
 extra_config:
   all:
     CURRENT_PROJECT_VERSION: 0
+    CLANG_ENABLE_CODE_COVERAGE: YES
 
 project_template: swift
 
