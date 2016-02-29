@@ -1,5 +1,5 @@
-company: "Droids on Roids"
-author: "Droids on Roids"
+company: "Droids On Roids"
+author: "Droids On Roids"
 prefix: ""
 test_target_name: UnitTests
 configure_git: false
