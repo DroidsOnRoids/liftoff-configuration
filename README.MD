@@ -1,4 +1,4 @@
-# Liftoff
+# DOR Liftoff configuration
 
 ## Installation
 ```bash
